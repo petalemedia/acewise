@@ -1,0 +1,561 @@
+{
+  "source": {
+    "title": "Cambridge IGCSE Biology 0610 · 2026–2028",
+    "url": "https://www.cambridgeinternational.org/Images/697203-2026-2028-syllabus.pdf"
+  },
+  "topics": [
+    {
+      "id": "1",
+      "title": "Characteristics and classification of living organisms",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Characteristics of living organisms",
+          "page": 12,
+          "depth": 2,
+          "summary": "Recognise the processes shared by living organisms, including movement, growth and reproduction."
+        },
+        {
+          "id": "1.2",
+          "title": "Concept and uses of classification systems",
+          "page": 13,
+          "depth": 2,
+          "summary": "Explore how organisms are grouped and how classification helps identify them."
+        },
+        {
+          "id": "1.3",
+          "title": "Features of organisms",
+          "page": 13,
+          "depth": 2,
+          "summary": "Compare the features used to distinguish major groups of organisms."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Organisation of the organism",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Cell structure",
+          "page": 14,
+          "depth": 2,
+          "summary": "Identify cell structures and relate specialised cells to their functions."
+        },
+        {
+          "id": "2.2",
+          "title": "Size of specimens",
+          "page": 14,
+          "depth": 2,
+          "summary": "Connect image size, actual size and magnification when studying specimens."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Movement into and out of cells",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Diffusion",
+          "page": 15,
+          "depth": 2,
+          "summary": "Explore how particles spread from a higher to a lower concentration."
+        },
+        {
+          "id": "3.2",
+          "title": "Osmosis",
+          "page": 15,
+          "depth": 2,
+          "summary": "Consider how water moves across a partially permeable membrane."
+        },
+        {
+          "id": "3.3",
+          "title": "Active transport",
+          "page": 16,
+          "depth": 2,
+          "summary": "Explore how cells use energy to move substances against a concentration gradient."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Biological molecules",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Biological molecules",
+          "page": 16,
+          "depth": 2,
+          "summary": "Meet the carbohydrates, fats and proteins that make up living organisms."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Enzymes",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Enzymes",
+          "page": 17,
+          "depth": 2,
+          "summary": "Explore how enzymes speed up reactions and how conditions affect their activity."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Plant nutrition",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Photosynthesis",
+          "page": 17,
+          "depth": 2,
+          "summary": "Follow how plants use light energy to make carbohydrates through photosynthesis."
+        },
+        {
+          "id": "6.2",
+          "title": "Leaf structure",
+          "page": 18,
+          "depth": 2,
+          "summary": "Relate the structures inside a leaf to photosynthesis and gas exchange."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Human nutrition",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Diet",
+          "page": 19,
+          "depth": 2,
+          "summary": "Consider the nutrients needed for a balanced diet and the effects of deficiencies."
+        },
+        {
+          "id": "7.2",
+          "title": "Digestive system",
+          "page": 19,
+          "depth": 2,
+          "summary": "Follow the movement of food through the digestive system and the roles of its organs."
+        },
+        {
+          "id": "7.3",
+          "title": "Physical digestion",
+          "page": 20,
+          "depth": 2,
+          "summary": "Explore how food is broken into smaller pieces without changing its molecules."
+        },
+        {
+          "id": "7.4",
+          "title": "Chemical digestion",
+          "page": 21,
+          "depth": 2,
+          "summary": "Follow how digestive enzymes break large food molecules into smaller ones."
+        },
+        {
+          "id": "7.5",
+          "title": "Absorption",
+          "page": 21,
+          "depth": 2,
+          "summary": "Explore how digested nutrients pass through the small intestine into the body."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Transport in plants",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Xylem and phloem",
+          "page": 22,
+          "depth": 2,
+          "summary": "Compare the tissues that carry water, minerals and sugars through a plant."
+        },
+        {
+          "id": "8.2",
+          "title": "Water uptake",
+          "page": 22,
+          "depth": 2,
+          "summary": "Follow the movement of water from the soil into a plant's roots."
+        },
+        {
+          "id": "8.3",
+          "title": "Transpiration",
+          "page": 23,
+          "depth": 2,
+          "summary": "Explore water loss from leaves and the factors that change its rate."
+        },
+        {
+          "id": "8.4",
+          "title": "Translocation",
+          "page": 23,
+          "depth": 2,
+          "summary": "Follow the movement of sugars and other assimilates around a plant."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Transport in animals",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Circulatory systems",
+          "page": 24,
+          "depth": 2,
+          "summary": "Compare circulatory systems and follow blood through the body."
+        },
+        {
+          "id": "9.2",
+          "title": "Heart",
+          "page": 24,
+          "depth": 2,
+          "summary": "Relate the structure of the heart to its role as a double pump."
+        },
+        {
+          "id": "9.3",
+          "title": "Blood vessels",
+          "page": 25,
+          "depth": 2,
+          "summary": "Compare arteries, veins and capillaries and the jobs they perform."
+        },
+        {
+          "id": "9.4",
+          "title": "Blood",
+          "page": 25,
+          "depth": 2,
+          "summary": "Explore the components of blood and how they transport substances and protect the body."
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Diseases and immunity",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Diseases and immunity",
+          "page": 26,
+          "depth": 2,
+          "summary": "Explore how pathogens cause disease and how the body prevents and fights infection."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Gas exchange in humans",
+      "subtopics": [
+        {
+          "id": "11.1",
+          "title": "Gas exchange in humans",
+          "page": 27,
+          "depth": 2,
+          "summary": "Relate the lungs and breathing system to efficient exchange of oxygen and carbon dioxide."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Respiration",
+      "subtopics": [
+        {
+          "id": "12.1",
+          "title": "Respiration",
+          "page": 28,
+          "depth": 2,
+          "summary": "Explore how cells release energy from nutrient molecules."
+        },
+        {
+          "id": "12.2",
+          "title": "Aerobic respiration",
+          "page": 28,
+          "depth": 2,
+          "summary": "Follow how cells use oxygen to release energy through aerobic respiration."
+        },
+        {
+          "id": "12.3",
+          "title": "Anaerobic respiration",
+          "page": 28,
+          "depth": 2,
+          "summary": "Compare ways that organisms release energy without oxygen."
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Excretion in humans",
+      "subtopics": [
+        {
+          "id": "13.1",
+          "title": "Excretion in humans",
+          "page": 29,
+          "depth": 2,
+          "summary": "Explore how the body removes metabolic waste and the role of the kidneys."
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Coordination and response",
+      "subtopics": [
+        {
+          "id": "14.1",
+          "title": "Coordination and response",
+          "page": 30,
+          "depth": 2,
+          "summary": "Follow how the nervous system detects changes and coordinates responses."
+        },
+        {
+          "id": "14.2",
+          "title": "Sense organs",
+          "page": 31,
+          "depth": 2,
+          "summary": "Explore how sense organs detect stimuli, including how the eye responds to light."
+        },
+        {
+          "id": "14.3",
+          "title": "Hormones",
+          "page": 32,
+          "depth": 2,
+          "summary": "Consider how hormones carry signals through the blood to target organs."
+        },
+        {
+          "id": "14.4",
+          "title": "Homeostasis",
+          "page": 32,
+          "depth": 2,
+          "summary": "Explore how the body keeps its internal conditions within suitable limits."
+        },
+        {
+          "id": "14.5",
+          "title": "Tropic responses",
+          "page": 33,
+          "depth": 2,
+          "summary": "Consider how plants respond to the direction of light and gravity."
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Drugs",
+      "subtopics": [
+        {
+          "id": "15.1",
+          "title": "Drugs",
+          "page": 33,
+          "depth": 2,
+          "summary": "Explore the effects of drugs on the body and the use of antibiotics."
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Reproduction",
+      "subtopics": [
+        {
+          "id": "16.1",
+          "title": "Asexual reproduction",
+          "page": 33,
+          "depth": 2,
+          "summary": "Consider how a single parent produces genetically identical offspring."
+        },
+        {
+          "id": "16.2",
+          "title": "Sexual reproduction",
+          "page": 34,
+          "depth": 2,
+          "summary": "Explore fertilisation and the genetic variation produced by sexual reproduction."
+        },
+        {
+          "id": "16.3",
+          "title": "Sexual reproduction in plants",
+          "page": 34,
+          "depth": 2,
+          "summary": "Follow pollination, fertilisation and seed formation in flowering plants."
+        },
+        {
+          "id": "16.4",
+          "title": "Sexual reproduction in humans",
+          "page": 35,
+          "depth": 2,
+          "summary": "Explore the human reproductive systems, fertilisation and development."
+        },
+        {
+          "id": "16.5",
+          "title": "Sex hormones in humans",
+          "page": 36,
+          "depth": 2,
+          "summary": "Consider how hormones control puberty and the menstrual cycle."
+        },
+        {
+          "id": "16.6",
+          "title": "Sexually transmitted infections",
+          "page": 36,
+          "depth": 2,
+          "summary": "Explore how sexually transmitted infections spread and how transmission can be reduced."
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Inheritance",
+      "subtopics": [
+        {
+          "id": "17.1",
+          "title": "Chromosomes, genes and proteins",
+          "page": 36,
+          "depth": 2,
+          "summary": "Connect chromosomes, DNA, genes and the production of proteins."
+        },
+        {
+          "id": "17.2",
+          "title": "Mitosis",
+          "page": 38,
+          "depth": 2,
+          "summary": "Explore the cell division used in growth, repair and asexual reproduction."
+        },
+        {
+          "id": "17.3",
+          "title": "Meiosis",
+          "page": 38,
+          "depth": 2,
+          "summary": "Consider how meiosis produces cells with half the number of chromosomes."
+        },
+        {
+          "id": "17.4",
+          "title": "Monohybrid inheritance",
+          "page": 39,
+          "depth": 2,
+          "summary": "Use genetic crosses to follow the inheritance of a single characteristic."
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Variation and selection",
+      "subtopics": [
+        {
+          "id": "18.1",
+          "title": "Variation",
+          "page": 40,
+          "depth": 2,
+          "summary": "Explore differences between individuals and the sources of genetic variation."
+        },
+        {
+          "id": "18.2",
+          "title": "Adaptive features",
+          "page": 40,
+          "depth": 2,
+          "summary": "Relate the features of organisms to survival in their environments."
+        },
+        {
+          "id": "18.3",
+          "title": "Selection",
+          "page": 41,
+          "depth": 2,
+          "summary": "Compare natural selection and the selection of useful characteristics by humans."
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Organisms and their environment",
+      "subtopics": [
+        {
+          "id": "19.1",
+          "title": "Energy flow",
+          "page": 41,
+          "depth": 2,
+          "summary": "Follow the flow of energy through ecosystems."
+        },
+        {
+          "id": "19.2",
+          "title": "Food chains and food webs",
+          "page": 42,
+          "depth": 2,
+          "summary": "Connect organisms through feeding relationships and trophic levels."
+        },
+        {
+          "id": "19.3",
+          "title": "Nutrient cycles",
+          "page": 43,
+          "depth": 2,
+          "summary": "Explore how carbon and nitrogen move between organisms and their environment."
+        },
+        {
+          "id": "19.4",
+          "title": "Populations",
+          "page": 43,
+          "depth": 2,
+          "summary": "Consider the factors that change the size of a population."
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Human influences on ecosystems",
+      "subtopics": [
+        {
+          "id": "20.1",
+          "title": "Food supply",
+          "page": 44,
+          "depth": 2,
+          "summary": "Explore food production and the environmental effects of agriculture."
+        },
+        {
+          "id": "20.2",
+          "title": "Habitat destruction",
+          "page": 44,
+          "depth": 2,
+          "summary": "Consider the causes and consequences of habitat destruction."
+        },
+        {
+          "id": "20.3",
+          "title": "Pollution",
+          "page": 45,
+          "depth": 2,
+          "summary": "Explore how pollutants affect organisms and ecosystems."
+        },
+        {
+          "id": "20.4",
+          "title": "Conservation",
+          "page": 46,
+          "depth": 2,
+          "summary": "Consider ways to conserve species, habitats and natural resources."
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Biotechnology and genetic modification",
+      "subtopics": [
+        {
+          "id": "21.1",
+          "title": "Biotechnology and genetic modification",
+          "page": 46,
+          "depth": 2,
+          "summary": "Explore why organisms and their products are useful in biotechnology."
+        },
+        {
+          "id": "21.2",
+          "title": "Biotechnology",
+          "page": 47,
+          "depth": 2,
+          "summary": "Consider practical uses of microorganisms and enzymes."
+        },
+        {
+          "id": "21.3",
+          "title": "Genetic modification",
+          "page": 47,
+          "depth": 2,
+          "summary": "Explore how genes can be transferred to change an organism's characteristics."
+        }
+      ]
+    }
+  ]
+}

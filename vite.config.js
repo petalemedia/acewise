@@ -6,7 +6,11 @@ import { fileURLToPath } from "node:url"
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ["react", "react-dom", "react-dom/client", "@radix-ui/react-accordion"],
+  },
   resolve: {
+    dedupe: ["react", "react-dom"],
     alias: {
       "@": path.resolve(path.dirname(fileURLToPath(import.meta.url)), "./src"),
     },

@@ -1,6 +1,7 @@
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
 import { Check, ChevronRight, Circle } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { DropdownSurface, DropdownSurfaceItem } from './dropdown-surface'
 
 const DropdownMenu = DropdownMenuPrimitive.Root
 const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger
@@ -11,27 +12,23 @@ const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup
 
 function DropdownMenuSubTrigger({ className, inset, children, ...props }) {
   return (
-    <DropdownMenuPrimitive.SubTrigger
+    <DropdownSurfaceItem as={DropdownMenuPrimitive.SubTrigger}
       className={cn(
-        "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent",
-        inset && "pl-8",
+        inset && "shared-dropdown-inset",
         className,
       )}
       {...props}
     >
       {children}
       <ChevronRight className="ml-auto h-4 w-4" />
-    </DropdownMenuPrimitive.SubTrigger>
+    </DropdownSurfaceItem>
   )
 }
 
 function DropdownMenuSubContent({ className, ...props }) {
   return (
-    <DropdownMenuPrimitive.SubContent
-      className={cn(
-        "z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-lg",
-        className,
-      )}
+    <DropdownSurface as={DropdownMenuPrimitive.SubContent}
+      className={className}
       {...props}
     />
   )
@@ -40,12 +37,9 @@ function DropdownMenuSubContent({ className, ...props }) {
 function DropdownMenuContent({ className, sideOffset = 4, ...props }) {
   return (
     <DropdownMenuPrimitive.Portal>
-      <DropdownMenuPrimitive.Content
+      <DropdownSurface as={DropdownMenuPrimitive.Content}
         sideOffset={sideOffset}
-        className={cn(
-          "z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md",
-          className,
-        )}
+        className={className}
         {...props}
       />
     </DropdownMenuPrimitive.Portal>
@@ -54,10 +48,9 @@ function DropdownMenuContent({ className, sideOffset = 4, ...props }) {
 
 function DropdownMenuItem({ className, inset, ...props }) {
   return (
-    <DropdownMenuPrimitive.Item
+    <DropdownSurfaceItem as={DropdownMenuPrimitive.Item}
       className={cn(
-        "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
-        inset && "pl-8",
+        inset && "shared-dropdown-inset",
         className,
       )}
       {...props}
@@ -67,9 +60,9 @@ function DropdownMenuItem({ className, inset, ...props }) {
 
 function DropdownMenuCheckboxItem({ className, children, checked, ...props }) {
   return (
-    <DropdownMenuPrimitive.CheckboxItem
+    <DropdownSurfaceItem as={DropdownMenuPrimitive.CheckboxItem}
       className={cn(
-        "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "shared-dropdown-indicator-left",
         className,
       )}
       checked={checked}
@@ -81,15 +74,15 @@ function DropdownMenuCheckboxItem({ className, children, checked, ...props }) {
         </DropdownMenuPrimitive.ItemIndicator>
       </span>
       {children}
-    </DropdownMenuPrimitive.CheckboxItem>
+    </DropdownSurfaceItem>
   )
 }
 
 function DropdownMenuRadioItem({ className, children, ...props }) {
   return (
-    <DropdownMenuPrimitive.RadioItem
+    <DropdownSurfaceItem as={DropdownMenuPrimitive.RadioItem}
       className={cn(
-        "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "shared-dropdown-indicator-left",
         className,
       )}
       {...props}
@@ -100,12 +93,12 @@ function DropdownMenuRadioItem({ className, children, ...props }) {
         </DropdownMenuPrimitive.ItemIndicator>
       </span>
       {children}
-    </DropdownMenuPrimitive.RadioItem>
+    </DropdownSurfaceItem>
   )
 }
 
 function DropdownMenuLabel({ className, inset, ...props }) {
-  return <DropdownMenuPrimitive.Label className={cn("px-2 py-1.5 text-sm font-semibold", inset && "pl-8", className)} {...props} />
+  return <DropdownMenuPrimitive.Label className={cn("px-2 py-1.5 text-sm font-semibold", inset && "shared-dropdown-inset", className)} {...props} />
 }
 
 function DropdownMenuSeparator({ className, ...props }) {

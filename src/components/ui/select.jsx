@@ -2,6 +2,7 @@ import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { Check, ChevronDown, ChevronUp } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { DropdownSurface, DropdownSurfaceItem } from './dropdown-surface'
 
 const Select = SelectPrimitive.Root
 const SelectGroup = SelectPrimitive.Group
@@ -49,9 +50,9 @@ function SelectScrollDownButton({ className, ...props }) {
 function SelectContent({ className, children, position = "popper", ...props }) {
   return (
     <SelectPrimitive.Portal>
-      <SelectPrimitive.Content
+      <DropdownSurface as={SelectPrimitive.Content} matchTriggerWidth
         className={cn(
-          "relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out",
+          "relative max-h-96",
           position === "popper" &&
             "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
           className,
@@ -70,7 +71,7 @@ function SelectContent({ className, children, position = "popper", ...props }) {
           {children}
         </SelectPrimitive.Viewport>
         <SelectScrollDownButton />
-      </SelectPrimitive.Content>
+      </DropdownSurface>
     </SelectPrimitive.Portal>
   )
 }
@@ -81,9 +82,9 @@ function SelectLabel({ className, ...props }) {
 
 function SelectItem({ className, children, ...props }) {
   return (
-    <SelectPrimitive.Item
+    <DropdownSurfaceItem as={SelectPrimitive.Item}
       className={cn(
-        "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+        "shared-dropdown-select-item",
         className,
       )}
       {...props}
@@ -95,7 +96,7 @@ function SelectItem({ className, children, ...props }) {
       </span>
 
       <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
-    </SelectPrimitive.Item>
+    </DropdownSurfaceItem>
   )
 }
 

@@ -1,0 +1,53 @@
+/* One public header for the homepage and every policy/contact page. */
+html:has(.home-workspace, .legal-page) { scrollbar-gutter: stable; }
+.topbar.home-topbar { position: relative; grid-area: auto; display: flex; align-items: center; justify-content: flex-start; width: min(1160px, 100%); min-height: 94px; margin-inline: auto; padding: 18px 32px; border: 0; background: transparent; gap: 12px; }
+.home-brand { display: inline-flex; align-items: center; gap: 0px; flex-shrink: 0; font-size: 18px; font-weight: 750; letter-spacing: -.035em; }
+.home-brand img { object-fit: contain; -webkit-user-drag: none; }
+.home-brand-mascot { width: 56px; height: 56px; }
+/* Change --wordmark-width to resize the AceWise wordmark. */
+.home-wordmark { --wordmark-width: 160px; display: block; width: var(--wordmark-width); }
+.home-wordmark img { display: block; width: 90%; height: auto; }
+.topbar.home-topbar .topbar-right { margin-left: auto; gap: 5px; }
+.topbar.homepage-topbar .home-navigation button,
+.topbar.homepage-topbar .stat { background: transparent; }
+.topbar.homepage-topbar .home-navigation button:hover,
+.topbar.homepage-topbar .home-navigation button[data-state="open"],
+.topbar.homepage-topbar .stat:hover,
+.topbar.homepage-topbar .stat[data-state="open"] {
+  background: rgb(255 255 255 / 62%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.topbar.homepage-topbar .home-level-trigger { background: transparent; }
+.topbar.home-topbar .stat { font-size: 17px; font-weight: 750; padding: 8px 9px; }
+.topbar.home-topbar .stat svg { width: 24px; height: 24px; }
+.topbar.home-topbar .avatar-button .profile-initial { width: 40px; height: 40px; font-size: 16px; }
+.topbar.home-topbar .xp-label { font-size: 13px; font-weight: 700; }
+.xp-value { display: inline-flex; perspective: 180px; }
+.xp-digit { display: inline-block; min-width: .58em; transform-origin: center bottom; }
+.xp-digit.is-rolling { animation: xp-digit-roll .175s cubic-bezier(.22,.61,.36,1); }
+@keyframes xp-digit-roll {
+  0% { opacity: .35; filter: blur(4px); transform: translateY(65%) rotateX(-75deg) scale(.92); }
+  55% { opacity: .9; filter: blur(1.5px); transform: translateY(-8%) rotateX(10deg) scale(1.02); }
+  100% { opacity: 1; filter: blur(0); transform: translateY(0) rotateX(0) scale(1); }
+}
+@media(prefers-reduced-motion: reduce) { .xp-digit { animation: none; } }
+@media(min-width: 1800px) { .topbar.home-topbar { max-width: 1380px; } }
+@media(max-width: 850px) { .topbar.home-topbar { flex-wrap: wrap; row-gap: 10px; } }
+@media(max-width: 720px) { .topbar.home-topbar { min-height: 75px; padding: 13px 22px; } }
+@media(max-width: 440px) {
+  .topbar.home-topbar { padding-inline: 15px; gap: 7px; }
+  .home-brand { gap: 0; }.home-brand-mascot { width: 42px; height: 42px; }.home-wordmark { --wordmark-width: 96px; }
+  .topbar.home-topbar .stat { padding-inline: 5px; font-size: 14px; }.topbar.home-topbar .stat svg { width: 18px; height: 18px; }
+  .topbar.home-topbar .topbar-right { gap: 1px; }.topbar.home-topbar .xp-label { font-size: 10px; }
+  .topbar.home-topbar .avatar-button { margin-left: 2px; }.topbar.home-topbar .avatar-button .profile-initial { width: 32px; height: 32px; font-size: 13px; }
+}
+
+/* Same surface and rows as the navigation menus; content kept intentionally small. */
+.topbar-dropdown.shared-dropdown { width: 230px; min-width: 0; padding: 1px 3px; max-height: calc(var(--radix-popover-content-available-height, 80dvh) - 12px); overflow-y: auto; transform-origin: top center; }
+.profile-dropdown.shared-dropdown { width: 260px; }
+.topbar-dropdown-summary { padding: 12px 14px; overflow-wrap: anywhere; }
+.topbar-dropdown-summary h3 { font-size: 17px; font-weight: 700; }
+.topbar-dropdown-summary p { margin-top: 6px; font-size: 14px; line-height: 1.7; color: #818892; }
+.topbar-dropdown-summary small { display: block; margin-top: 7px; font-size: 10px; color: #818892; }
+.topbar-dropdown .shared-dropdown-item { padding: 7px 10px; font-size: 15px; }

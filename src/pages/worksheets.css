@@ -1,0 +1,71 @@
+.worksheets-main { padding: 0; background: #f5f5f5; }
+.notes-shell[data-study-page="worksheets"]:not(.outline-visible) .worksheets-main { border-left: 0; }
+.worksheet-layout { min-height: 100%; translate: 0 var(--top-overscroll, 0px); }
+.worksheet-layout .study-content { translate: none; }
+.worksheet-shelf { padding: 32px 40px 20px; background: white; }
+.worksheet-heading-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 0px; }
+.worksheet-heading-row .study-page-title { flex: 1; min-width: 0; margin: 1px 0 0; }
+.worksheet-difficulty-trigger { width: 104px; height: 38px; padding-inline: 12px; border-radius: 13px; flex-shrink: 0; font-weight: 650; }
+.worksheet-picker { position: relative; min-width: 0; }
+.worksheet-strip { display: flex; align-items: flex-end; gap: 14px; overflow-x: auto; overflow-y: hidden; min-width: 0; width: 100%; height: 154px; padding: 4px 18px 8px; scroll-behavior: auto; overscroll-behavior-x: contain; scrollbar-width: none; mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); }
+.worksheet-strip::-webkit-scrollbar { display: none; }
+.worksheet-preview { position: relative; flex: 0 0 126px; min-width: 0; height: 122px; padding: 0; overflow: hidden; background: linear-gradient(to bottom, #f8f8f8 50%, transparent); border: 2px solid transparent; border-radius: 15px; transition: height .25s var(--layout-ease), border-color .2s, background .2s; }
+.worksheet-preview::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(to bottom, #0000000d, #00000008 45%, transparent); opacity: 0; pointer-events: none; transition: opacity .2s; }
+.worksheet-preview:not([aria-pressed="true"]):hover::after { opacity: 1; }
+.worksheet-preview[aria-pressed="true"] { height: 130px; border-color: #efefef; background: transparent; }
+.worksheet-cover { position: absolute; top: 10px; left: 10px; display: block; width: calc(100% - 20px); height: calc(100% - 10px); padding: 9px 6px; background: white; color: #111; text-align: left; border-radius: 9px 9px 0 0; pointer-events: none; container-type: inline-size; mask-image: linear-gradient(to bottom, black 65%, transparent 100%); }
+.worksheet-cover-heading { display: block; font-size: 3.1cqw; font-weight: 700; line-height: 1.5; }
+.worksheet-cover-title { display: block; margin-top: 3cqw; font-size: 8.5cqw; font-weight: 750; letter-spacing: -.045em; line-height: 1.15; }
+.worksheet-cover-details { display: block; margin-top: 3cqw; color: #777; font-size: 3.1cqw; font-weight: 550; line-height: 1.4; }
+.worksheet-cover-fields { position: absolute; left: 6px; right: 6px; bottom: 16px; display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 1px solid #eee; color: #888; font-size: 3cqw; }
+.worksheet-difficulty { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: flex-end; gap: 3px; height: 19px; color: #25aa68; }
+.worksheet-difficulty i { width: 5px; height: 8px; background: currentColor; border-radius: 4px; }
+.worksheet-difficulty i:nth-child(2) { height: 13px; opacity: .3; }
+.worksheet-difficulty i:nth-child(3) { height: 19px; opacity: .3; }
+.worksheet-difficulty.medium { color: #ed9c22; }
+.worksheet-difficulty.medium i:nth-child(2), .worksheet-difficulty.hard i { opacity: 1; }
+.worksheet-difficulty.hard { color: #dd646d; }
+.worksheet-reader { padding: 16px 40px 110px; }
+.worksheet-reader-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; color: #777; font-size: 13px; font-weight: 550; user-select: none; }
+.worksheet-reader-controls > div { display: flex; align-items: center; gap: 4px; }
+.worksheet-reader-controls .icon-button { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px; }
+.worksheet-reader-controls .icon-button:hover { color: #111; background: var(--icon-hover-background); }
+.worksheet-reader-controls .icon-button:disabled { opacity: .3; pointer-events: none; }
+.worksheet-reader-controls svg { width: 17px; height: 17px; }
+.worksheet-zoom { min-width: 39px; text-align: center; font-size: 12px; }
+.worksheet-document { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scroll-behavior: auto; overflow-anchor: none; }
+.worksheet-document .react-pdf__Document { display: flex; flex-direction: column; align-items: center; gap: 22px; width: max(100%, var(--pdf-page-width)); }
+.worksheet-pdf-page { position: relative; flex-shrink: 0; overflow: hidden; background: white; }
+.worksheet-pdf-render { transform-origin: top left; }
+.worksheet-pdf-preview { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.worksheet-pdf-preview canvas { display: block; width: 100%; height: 100%; }
+.worksheet-document[data-pan] .textLayer, .worksheet-document[data-pan] .textLayer span { cursor: inherit; user-select: none; -webkit-user-select: none; }
+.worksheet-document .react-pdf__Page__canvas { max-width: none; }
+.worksheet-document .react-pdf__Page { background: white; box-shadow: 0 2px 10px #0000000b; animation: worksheet-page-in .2s ease-out; }
+@keyframes worksheet-page-in { from { opacity: 0; } to { opacity: 1; } }
+.worksheet-document .react-pdf__Page__textContent { user-select: text; -webkit-user-select: text; }
+.worksheet-loading, .worksheet-load-error { padding: 70px 20px; text-align: center; background: white; color: #777; }
+.worksheet-load-error a { color: #111; text-decoration: underline; }
+.worksheet-page-loading { min-height: 800px; padding: 60px; background: white; color: #888; }
+.worksheet-empty { padding: 70px 0; }
+.worksheet-empty h2 { font-size: 22px; font-weight: 650; margin-bottom: 12px; }
+.worksheet-empty p { color: #777; line-height: 1.7; }
+@media (min-width: 1800px) {
+  .worksheet-shelf { padding-top: 2.177vw; }
+  .worksheet-difficulty-trigger { width: 7.08vw; height: 2.585vw; padding-inline: .816vw; border-radius: .884vw; }
+  .worksheet-strip { height: 10.48vw; gap: .952vw; }
+  .worksheet-preview { flex-basis: 8.57vw; height: 8.3vw; }
+  .worksheet-preview[aria-pressed="true"] { height: 9.52vw; }
+}
+@media (max-width: 700px) {
+  .worksheet-shelf { padding: 33px 20px 14px; }
+  .worksheet-heading-row { gap: 12px; }
+  .worksheet-difficulty-trigger { width: 100px; }
+  .worksheet-reader { padding: 14px 20px 115px; }
+  .worksheet-reader-controls { flex-wrap: wrap; }
+  .worksheet-empty { padding: 50px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .worksheet-preview, .worksheet-preview::after { transition: none; }
+  .worksheet-document .react-pdf__Page { animation: none; }
+}

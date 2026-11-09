@@ -1,0 +1,14 @@
+Scientific calculator simulator
+
+Source: https://github.com/simoncragg/scientific-calculator
+Upstream revision: 0ae021d
+Copyright (c) 2024 Simon Cragg
+MIT License — see LICENSE.txt in this directory.
+
+Independent Casio-inspired fx-82TS simulator; not official Casio software.
+
+Local adaptations: isolated offline build; local math labels instead of a MathJax CDN;
+viewport scaling; physical keyboard input; saved session state; working memory/Ans
+keys; power operator; defensive handling of invalid calculations.
+
+Editable source and upstream tests: vendor/casio-simulator in the application repository.
